@@ -167,8 +167,8 @@ def makeSVG(data, background_color, border_color):
 @app.route("/<path:path>")
 @app.route('/with_parameters')
 def catch_all(path):
-    background_color = request.args.get('background_color') or "0a0e12"
-    border_color = request.args.get('border_color') or "0a0e12"
+    background_color = request.args.get('background_color') or "2afd78"
+    border_color = request.args.get('border_color') or "2afd78"
 
     try:
         data = get(NOW_PLAYING_URL)
